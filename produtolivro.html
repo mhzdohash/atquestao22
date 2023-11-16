@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautystore</title>
+    <!-- Inclua os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com Logotipo e Barra de Navegação Bootstrap -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-left">
+                    <h1 class="mb-0">
+                        <a class="text-white" href="/index">FiapBooks</a>
+                        <style>
+                            a.text-white {
+                                text-decoration: none;
+                            }
+                        </style>
+                    </h1>
+                </div>
+                    <div class="col-4 text-center">
+                        <img src="imgs/Fiap-logo-novo-removebg-preview.png" alt="fiaplogo" width="50%">
+                    </div>
+                <div class="col-4 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/cadastrousuario">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/produtolivro">Cadastrar Produtos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Formulário de Cadastro de Produtos com Bootstrap -->
+<div class="container mt-5">
+    <h1>Cadastro de livros</h1>
+    <form action="/produtolivro"  method="post">
+        <div class="form-group">
+            <label for="codigo">Código:</label>
+            <input type="text" class="form-control" id="codigo" name="codigo" placeholder="Código do produto">
+        </div>
+        <div class="form-group">
+            <label for="descricao">Descrição:</label>
+            <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Descrição">
+        </div>
+        <div class="form-group">
+            <label for="fornecedor">Fornecedor:</label>
+            <input type="text" class="form-control" id="fornecedor" name="fornecedor" placeholder="Fornecedor">
+        </div>
+        <div class="form-group">
+            <label for="data_fabricacao">Data de Fabricação:</label>
+            <input type="date" class="form-control" id="data_fabricacao" name="data_fabricacao" placeholder="Data de Fabricação">
+        </div>
+        <div class="form-group">
+            <label for="qnt_estoque">Quantidade no Estoque</label>
+            <input type="number" class="form-control" id="qnt_estoque" name="qnt_estoque" placeholder="Quantidade no Estoque">
+        </div>
+        <center><button type="submit" class="btn btn-danger">Cadastrar</button></center>
+    </form>
+</div>
+<br><br><br><br><br><br><br>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    &copy; 2023 FiapBooks - Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Inclua os scripts JavaScript do Bootstrap no final do corpo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

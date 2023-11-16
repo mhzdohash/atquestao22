@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAPBOOKS</title>
+    <!-- Inclua os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com Logotipo e Barra de Navegação Bootstrap -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-left">
+                    <h1 class="mb-0">
+                        <a class="text-white" href="/index">FiapBooks</a>
+                        <style>
+                            /* Estilo para remover o sublinhado do link "Beautystore" */
+                            a.text-white {
+                                text-decoration: none;
+                            }
+                        </style>
+                    </h1>
+                </div>
+                <div class="col-4 text-center">
+                    <img src="imgs/Fiap-logo-novo-removebg-preview.png" alt="fiaplogo" width="50%">
+                </div>
+                <div class="col-4 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/cadastrousuario">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/produtolivro">Cadastrar Produtos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Formulário de Cadastro de Usuário com Bootstrap -->
+<div class="container mt-5">
+    <h1>Cadastro de Usuário</h1>
+    <form action="/cadastrousuario"  method="post">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+        </div>
+        <center><button type="submit" class="btn btn-danger">Cadastrar</button></center>
+    </form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    &copy; 2023 FiapBooks - Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Inclua os scripts JavaScript do Bootstrap no final do corpo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

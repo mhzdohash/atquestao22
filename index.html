@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIAPBOOKS</title>
+    <!-- Inclua os links para os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Cabeçalho com Logotipo e Barra de Navegação Bootstrap -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-left">
+                    <h1 class="mb-0">FiapBooks</h1>
+                </div>
+                <div class="col-4 text-center">
+                    <img src="imgs/Fiap-logo-novo-removebg-preview.png" alt="fiaplogo" width="50%">
+                </div>
+                <div class="col-4 text-right">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/cadastrousuario">Entrar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="/produtolivro">Cadastrar Produtos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Carrossel (Carousel) Bootstrap com botões pretos -->
+<div class="container mt-4">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores de Slides -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Slides do Carrossel -->
+        <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="imgs/imagem1.jpg" alt="Primeira imagem" class="d-block w-100">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="imgs/imagem2.jpg" alt="Segunda imagem" class="d-block w-100">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="imgs/imagem3.jpg" alt="Terceira imagem" class="d-block w-100">
+            </div>
+        </div>
+        <!-- Controles de Navegação do Carrossel -->
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+</div>
+
+    <!-- Conteúdo da Página -->
+    <div class="container mt-4">
+        <h2>Produtos em Destaque</h2>
+        <div class="row">
+            <!-- Produto 1 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/produto1.png" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">O Universo Invisível</h5>
+                        <p class="card-text">Lançado no último dia 8 de março, O Universo Invisível traz à tona uma tese inovadora a cerca da extinção dos dinossauros. Proposta por Lisa Randall, professora da Universidade Harvard e primeira mulher titular na cadeira de Física da instituição, a teoria prevê que o cataclisma ocorrido há 66 milhões de anos teria sido causado por um cometa que teria saído de sua órbita quando o Sistema Solar passou por um disco de matéria escura no plano da Via Láctea.</p>
+                        <p class="card-text">Preço: R$ 109,90</p>
+                        <a href="#" class="btn btn-danger">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/produto2.png" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Cidade nas nuvens</h5>
+                        <p class="card-text">Nesta ficção, Anthony Doerr, vencedor do Prêmio Pulitzer, narra a vida de cinco personagens que vivem em períodos históricos completamente diferentes, mas são entrelaçados pela história de Éton, um homem que, na mitologia grega, sonhava em ser transformado em pássaro para voar até o paraíso.</p>
+                        <p class="card-text">Preço: R$ 79,90</p>
+                        <a href="#" class="btn btn-danger">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="imgs/produto3.png" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Grandes obras de Shakespeare 2</h5>
+                        <p class="card-text">Em 2022, fãs do poeta e dramatrugo William Shakespeare ganharam mais uma edição de luxo da produção do escritor. O segundo volume do box Grandes obras de Shakespeare, projeto dedicado ao Bardo inglês criado pela Editora Nova Fronteira em 2017, foi organizado por Liana de Camargo Leão, professora titular da Universidade Federal do Paraná (UFPR) e especialista na obra shakespeariana, e traduzido pela renomada ensaísta e crítica de teatro Barbara Heliodora.</p>
+                        <p class="card-text">Preço: R$ 249,90</p>
+                        <a href="#" class="btn btn-danger">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    &copy; 2023 FiapBooks - Todos os direitos reservados
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Inclua os scripts JavaScript do Bootstrap no final do corpo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
